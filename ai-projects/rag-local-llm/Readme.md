@@ -27,7 +27,6 @@ The system allows users to upload multiple PDF files (especially those containin
 
 ### Purpose of This Project
 This was my **first major hands-on AI project** after starting to learn AI from scratch.
-
 I used this project to deeply understand the inner workings of RAG systems by running **8+ controlled experiments**.
 
 ### Key Learnings
@@ -38,6 +37,9 @@ This project gave me hands-on experience with the practical realities of buildin
 - Embedding models (all-MiniLM-L6-v2, nomic-embed-text-v1.5, and considered BGE models)
 - Retrieval techniques (simple vector search → keyword filtering → full BM25 hybrid + cross-encoder reranker)
 - FAISS index types (stuck with FlatL2 for accuracy, while being aware of IVFFlat and HNSW approximate methods)
+
+### Screenshots
+![Main Interface](screenshots/Mainpage.png)
 
 **Important Realization:**
 Even after implementing hybrid retrieval, reranking, and testing multiple embeddings and configurations, classic RAG still showed clear limitations when dealing with structured tabular data and aggregation tasks. 
