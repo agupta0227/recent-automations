@@ -18,7 +18,7 @@ A fully local Retrieval-Augmented Generation (RAG) application I built from scra
 - Streamlit-based interactive UI
 
 ### Tech Stack
-- **LLM Runtime**: Ollama (I primarily used Llama 3.2 3B)
+- **LLM Runtime**: Ollama (I primarily used `Llama 3.2 3B`)
 - **Embeddings**: Sentence-Transformers (primarily `nomic-ai/nomic-embed-text-v1.5`)
 - **Vector Database**: FAISS (FlatL2 index – exact search)
 - **Hybrid Search**: BM25Okapi + CrossEncoder (`ms-marco-MiniLM-L-6-v2`)
