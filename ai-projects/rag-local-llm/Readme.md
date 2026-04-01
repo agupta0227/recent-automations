@@ -47,4 +47,4 @@ Even after implementing hybrid retrieval, reranking, and testing multiple embedd
 I consciously chose not to exhaustively test every available option (such as the third embedding model or switching to IVFFlat/HNSW index types) because I recognized that the core issue was architectural — not something that could be fully solved by further parameter tuning or switching vector store components. This helped me understand when RAG is effective and when a hybrid approach with structured tools (like SQL or Pandas) becomes necessary.
 
 ### Files
-Main implementation: `src/rag_benchmark_final.py`
+Main implementation: `src/rag_benchmark_auto4.py`
