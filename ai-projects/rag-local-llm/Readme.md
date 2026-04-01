@@ -39,7 +39,7 @@ This project gave me hands-on experience with the practical realities of buildin
 - FAISS index types (stuck with FlatL2 for accuracy, while being aware of IVFFlat and HNSW approximate methods)
 
 ### Screenshots
-![Main Interface](screenshots/Mainpage.png)
+![Main Interface](screenshots/mainpage.png)
 
 **Important Realization:**
 Even after implementing hybrid retrieval, reranking, and testing multiple embeddings and configurations, classic RAG still showed clear limitations when dealing with structured tabular data and aggregation tasks. 
