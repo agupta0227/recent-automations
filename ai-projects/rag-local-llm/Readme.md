@@ -5,29 +5,32 @@
 **Technology:** Python + Streamlit
 
 ### Description
-A fully local Retrieval-Augmented Generation (RAG) application built from scratch to experiment with document-based question answering using open-source tools only.
+A fully local Retrieval-Augmented Generation (RAG) application I built from scratch to experiment with document-based question answering using open-source tools. The system allows uploading multiple PDF files containing structured tabular data, then asking both retrieval-style questions (e.g. totals, sums) and reasoning questions about patterns and trends — all running completely locally.
 
-The system allows users to upload multiple PDF files (especially those containing structured tabular data), then ask both simple retrieval and complex reasoning questions against the documents — all running locally.
-
-### Key Features
-- Local LLM inference using Ollama
-- FAISS vector database for fast similarity search
-- Hybrid retrieval pipeline (BM25 keyword search + vector embeddings)
-- Cross-encoder reranker for improved result relevance
-- Configurable parameters: chunk size, number of retrieved chunks (k), embedding models
-- Automated benchmarking mode with latency tracking and result logging
-- Detailed debug output showing exactly which chunks were retrieved for each question
+### Key Features Implemented
+- Local LLM inference via Ollama
+- FAISS vector store for similarity search
+- Hybrid retrieval: BM25 keyword search + vector embeddings
+- Cross-encoder reranker for improved relevance ranking
+- Configurable chunk size and number of retrieved chunks (k)
+- Automated benchmarking with per-question latency tracking
+- Detailed debug output showing top retrieved chunks for every question
+- Streamlit-based interactive UI
 
 ### Tech Stack
-- **LLM**: Ollama
-- **Embeddings**: Sentence-Transformers
-- **Vector Store**: FAISS
-- **Hybrid Search**: BM25Okapi + CrossEncoder reranker
-- **UI**: Streamlit
+- **LLM Runtime**: Ollama (I primarily used Llama 3.2 3B)
+- **Embeddings**: Sentence-Transformers (primarily `nomic-ai/nomic-embed-text-v1.5`)
+- **Vector Database**: FAISS (FlatL2 index – exact search)
+- **Hybrid Search**: BM25Okapi + CrossEncoder (`ms-marco-MiniLM-L-6-v2`)
+- **UI & Benchmarking**: Streamlit
 
-### Purpose of This Project
-This was my **first major hands-on AI project** after starting to learn AI from scratch.
-I used this project to deeply understand the inner workings of RAG systems by running **8+ controlled experiments**.
+### What I Explored (8 Experiments)
+I ran 8 controlled experiments with deliberate progression:
+
+- **Experiments 1–3**: Started with basic vector search while experimenting with different chunk sizes and k values to understand how chunking affects retrieval.
+- **Experiments 4–5**: Switched to a stronger embedding model (`nomic-embed-text-v1.5`) and added basic keyword filtering because the initial embeddings were too weak on exact matches.
+- **Experiments 6–7**: Implemented full BM25 hybrid retrieval (keyword + vector) + cross-encoder reranker and added detailed debug output to see exactly which chunks were being retrieved.
+- **Experiment 8 (Final)**: Optimized chunk size to 800 characters and k=25 with the strongest hybrid setup to push classic RAG as far as possible.
 
 ### Key Learnings
 This project gave me hands-on experience with the practical realities of building RAG systems. Through 8+ controlled experiments, I systematically explored:
@@ -41,10 +44,10 @@ This project gave me hands-on experience with the practical realities of buildin
 ### Screenshots
 ![Main Interface](screenshots/mainpage.png)
 
+### Files
+Main implementation: `src/rag_benchmark_auto4.py`
+
 **Important Realization:**
 Even after implementing hybrid retrieval, reranking, and testing multiple embeddings and configurations, classic RAG still showed clear limitations when dealing with structured tabular data and aggregation tasks. 
 
-I consciously chose not to exhaustively test every available option (such as the third embedding model or switching to IVFFlat/HNSW index types) because I recognized that the core issue was architectural — not something that could be fully solved by further parameter tuning or switching vector store components. This helped me understand when RAG is effective and when a hybrid approach with structured tools (like SQL or Pandas) becomes necessary.
-
-### Files
-Main implementation: `src/rag_benchmark_auto4.py`
+I consciously chose not to exhaustively test every available option (such as the third embedding model `bge-small-en-v1.5` or switching to `IVFFlat/HNSW` index types of FAISS) because I recognized that the core issue was architectural — not something that could be fully solved by further parameter tuning or switching vector store components. This helped me understand when RAG is effective and when a hybrid approach with structured tools (like SQL or Pandas) becomes necessary.
