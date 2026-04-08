@@ -44,6 +44,9 @@ This project gave me hands-on experience with the practical realities of buildin
 ### Screenshots
 ![Main Interface](screenshots/mainpage.png)
 
+### Flowchart
+![Main Interface](screenshots/Diagram.png)
+
 ### Files
 Main implementation: `src/rag_benchmark_auto4.py`
 
