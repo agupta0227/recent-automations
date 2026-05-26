@@ -1,0 +1,67 @@
+{
+  "total_approvals": 7,
+  "decisions": [
+    {
+      "step_name": "analyze",
+      "timestamp": "2026-05-21T15:50:26.191670",
+      "status": "SKIPPED",
+      "reviewer": "SYSTEM",
+      "comments": "",
+      "suggested_changes": ""
+    },
+    {
+      "step_name": "generate",
+      "timestamp": "2026-05-21T15:55:02.931334",
+      "status": "SKIPPED",
+      "reviewer": "SYSTEM",
+      "comments": "",
+      "suggested_changes": ""
+    },
+    {
+      "step_name": "fix",
+      "timestamp": "2026-05-21T16:03:09.962221",
+      "status": "SKIPPED",
+      "reviewer": "SYSTEM",
+      "comments": "",
+      "suggested_changes": ""
+    },
+    {
+      "step_name": "fix",
+      "timestamp": "2026-05-21T16:14:09.512465",
+      "status": "SKIPPED",
+      "reviewer": "SYSTEM",
+      "comments": "",
+      "suggested_changes": ""
+    },
+    {
+      "step_name": "fix",
+      "timestamp": "2026-05-21T16:22:56.053913",
+      "status": "SKIPPED",
+      "reviewer": "SYSTEM",
+      "comments": "",
+      "suggested_changes": ""
+    },
+    {
+      "step_name": "fix",
+      "timestamp": "2026-05-21T16:40:42.964304",
+      "status": "SKIPPED",
+      "reviewer": "SYSTEM",
+      "comments": "",
+      "suggested_changes": ""
+    },
+    {
+      "step_name": "organize",
+      "timestamp": "2026-05-21T16:48:39.675452",
+      "status": "SKIPPED",
+      "reviewer": "SYSTEM",
+      "comments": "",
+      "suggested_changes": ""
+    }
+  ],
+  "summary": {
+    "approved": 0,
+    "rejected": 0,
+    "approved_with_changes": 0,
+    "skipped": 7
+  }
+}
