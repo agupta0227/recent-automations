@@ -1,0 +1,234 @@
+[
+  {
+    "key": "SDLC-1",
+    "summary": "This C# code provides a basic framework for managing sales records and performing common data-related operations. It dem",
+    "description": "This C# code provides a basic framework for managing sales records and performing common data-related operations. It demonstrates good structure with clear separation of concerns and uses standard libraries, but could benefit from more detailed implementation and improved error handling.",
+    "severity": "TRIVIAL",
+    "iteration": 1,
+    "timestamp": "2026-05-21T15:56:45.022677"
+  },
+  {
+    "key": "SDLC-2",
+    "summary": "Missing Implementation:**  Many methods are declared but lack their actual implementations (e.g., `LoadCSVData`, `SaveCS",
+    "description": "Missing Implementation:**  Many methods are declared but lack their actual implementations (e.g., `LoadCSVData`, `SaveCSVData`, `ExportCSV`). This makes the code incomplete and difficult to review.",
+    "severity": "TRIVIAL",
+    "iteration": 1,
+    "timestamp": "2026-05-21T15:56:45.022985"
+  },
+  {
+    "key": "SDLC-3",
+    "summary": "Error Handling:** While basic exception handling is present, it's not comprehensive enough. Consider using more specific",
+    "description": "Error Handling:** While basic exception handling is present, it's not comprehensive enough. Consider using more specific error messages for each operation to aid debugging.",
+    "severity": "MAJOR",
+    "iteration": 1,
+    "timestamp": "2026-05-21T15:56:45.023155"
+  },
+  {
+    "key": "SDLC-4",
+    "summary": "Limited Data Model:** The `SalesRecord` class is a placeholder; consider adding attributes and methods that accurately r",
+    "description": "Limited Data Model:** The `SalesRecord` class is a placeholder; consider adding attributes and methods that accurately represent the data model.",
+    "severity": "TRIVIAL",
+    "iteration": 1,
+    "timestamp": "2026-05-21T15:56:45.023342"
+  },
+  {
+    "key": "SDLC-5",
+    "summary": "Detailed Implementation:** Implement the missing methods (e.g., `LoadCSVData`, `SaveCSVData`) to demonstrate how the app",
+    "description": "Detailed Implementation:** Implement the missing methods (e.g., `LoadCSVData`, `SaveCSVData`) to demonstrate how the application handles data operations.",
+    "severity": "TRIVIAL",
+    "iteration": 1,
+    "timestamp": "2026-05-21T15:56:45.023650"
+  },
+  {
+    "key": "SDLC-6",
+    "summary": "Specific Error Handling:** Provide more detailed error messages and consider logging errors for debugging purposes.",
+    "description": "Specific Error Handling:** Provide more detailed error messages and consider logging errors for debugging purposes.",
+    "severity": "TRIVIAL",
+    "iteration": 1,
+    "timestamp": "2026-05-21T15:56:45.023839"
+  },
+  {
+    "key": "SDLC-7",
+    "summary": "Refactored Data Model:** Consider creating a dedicated class for `SalesRecord` with clear attributes and methods.",
+    "description": "Refactored Data Model:** Consider creating a dedicated class for `SalesRecord` with clear attributes and methods.",
+    "severity": "TRIVIAL",
+    "iteration": 1,
+    "timestamp": "2026-05-21T15:56:45.024045"
+  },
+  {
+    "key": "SDLC-8",
+    "summary": "Code Optimization:**  Use techniques like delegates or helper classes to reduce code repetition and improve readability.",
+    "description": "Code Optimization:**  Use techniques like delegates or helper classes to reduce code repetition and improve readability.",
+    "severity": "MINOR",
+    "iteration": 1,
+    "timestamp": "2026-05-21T15:56:45.024302"
+  },
+  {
+    "key": "SDLC-9",
+    "summary": "Missing Implementation:** The code lacks implementation details for crucial functions like `LoadData`, `SaveData`, `Crea",
+    "description": "Missing Implementation:** The code lacks implementation details for crucial functions like `LoadData`, `SaveData`, `CreateNewRecord`, `ViewRecords`, `ExportToCSV`.  This makes the code incomplete and difficult to understand. (Major)",
+    "severity": "MAJOR",
+    "iteration": 2,
+    "timestamp": "2026-05-21T16:05:10.238571"
+  },
+  {
+    "key": "SDLC-10",
+    "summary": "Hardcoded File Paths:** The code relies on hardcoded file paths (`\"sales.csv\"`, `\"export_data.csv\"`). This can lead to i",
+    "description": "Hardcoded File Paths:** The code relies on hardcoded file paths (`\"sales.csv\"`, `\"export_data.csv\"`). This can lead to issues if these paths change or become unavailable. Consider using environment variables or configuration files for more robust handling. (Minor)",
+    "severity": "MINOR",
+    "iteration": 2,
+    "timestamp": "2026-05-21T16:05:10.238898"
+  },
+  {
+    "key": "SDLC-11",
+    "summary": "Data Model Complexity:**  The `SalesRecord` class is not defined in the code snippet. It's unclear how this model intera",
+    "description": "Data Model Complexity:**  The `SalesRecord` class is not defined in the code snippet. It's unclear how this model interacts with the data loading/saving process. (Minor)",
+    "severity": "MINOR",
+    "iteration": 2,
+    "timestamp": "2026-05-21T16:05:10.239165"
+  },
+  {
+    "key": "SDLC-12",
+    "summary": "Error Handling:** Implement robust error handling mechanisms to catch exceptions during file operations and provide mean",
+    "description": "Error Handling:** Implement robust error handling mechanisms to catch exceptions during file operations and provide meaningful feedback to the user.",
+    "severity": "TRIVIAL",
+    "iteration": 2,
+    "timestamp": "2026-05-21T16:05:10.239472"
+  },
+  {
+    "key": "SDLC-13",
+    "summary": "Logging:** Consider adding logging statements to track execution flow and identify potential issues.",
+    "description": "Logging:** Consider adding logging statements to track execution flow and identify potential issues.",
+    "severity": "TRIVIAL",
+    "iteration": 2,
+    "timestamp": "2026-05-21T16:05:10.239722"
+  },
+  {
+    "key": "SDLC-14",
+    "summary": "Missing Implementation:** The code provides placeholder comments for loading/saving data from CSV files, creating new re",
+    "description": "Missing Implementation:** The code provides placeholder comments for loading/saving data from CSV files, creating new records, displaying records, exporting to CSV, and deserializing/serializing data. These must be implemented for the code to function.  (Major)",
+    "severity": "MAJOR",
+    "iteration": 3,
+    "timestamp": "2026-05-21T16:16:02.859836"
+  },
+  {
+    "key": "SDLC-15",
+    "summary": "Error Handling:** While basic exception handling is present, it could be improved by adding specific error messages or l",
+    "description": "Error Handling:** While basic exception handling is present, it could be improved by adding specific error messages or logging for better debugging. (Minor)",
+    "severity": "MAJOR",
+    "iteration": 3,
+    "timestamp": "2026-05-21T16:16:02.860189"
+  },
+  {
+    "key": "SDLC-16",
+    "summary": "Code Clarity:** Some sections like `DeserializeCSVLine` and `SerializeCSVLine` are overly generic; consider using more d",
+    "description": "Code Clarity:** Some sections like `DeserializeCSVLine` and `SerializeCSVLine` are overly generic; consider using more descriptive names to enhance readability.  (Minor)",
+    "severity": "MINOR",
+    "iteration": 3,
+    "timestamp": "2026-05-21T16:16:02.860597"
+  },
+  {
+    "key": "SDLC-17",
+    "summary": "Robust Error Handling:** Implement more comprehensive error handling with specific exception messages and logging for de",
+    "description": "Robust Error Handling:** Implement more comprehensive error handling with specific exception messages and logging for debugging purposes.",
+    "severity": "MAJOR",
+    "iteration": 3,
+    "timestamp": "2026-05-21T16:16:02.861001"
+  },
+  {
+    "key": "SDLC-18",
+    "summary": "Descriptive Naming:** Use descriptive names for methods and variables to improve clarity and maintainability. For exampl",
+    "description": "Descriptive Naming:** Use descriptive names for methods and variables to improve clarity and maintainability. For example, `DeserializeCSVLine` could be renamed to `ParseCSVRecord`.",
+    "severity": "MINOR",
+    "iteration": 3,
+    "timestamp": "2026-05-21T16:16:02.861353"
+  },
+  {
+    "key": "SDLC-19",
+    "summary": "Missing Implementation Details (Minor):** The code provides placeholder comments for various methods like `LoadCSVData`,",
+    "description": "Missing Implementation Details (Minor):** The code provides placeholder comments for various methods like `LoadCSVData`, `SaveCSVData`, etc., but lacks detailed implementation.  This makes it difficult to understand the actual logic behind these functions.",
+    "severity": "MINOR",
+    "iteration": 4,
+    "timestamp": "2026-05-21T16:24:58.340185"
+  },
+  {
+    "key": "SDLC-20",
+    "summary": "Naming Conventions (Minor):** While the code follows basic naming conventions, using more descriptive variable and metho",
+    "description": "Naming Conventions (Minor):** While the code follows basic naming conventions, using more descriptive variable and method names would improve readability. For example, instead of \"SalesRecord\", consider \"SalesItem\" or something similar.",
+    "severity": "MINOR",
+    "iteration": 4,
+    "timestamp": "2026-05-21T16:24:58.340642"
+  },
+  {
+    "key": "SDLC-21",
+    "summary": "Error Handling (Minor):** The `try...catch` blocks are used for error handling, but they could be improved by providing ",
+    "description": "Error Handling (Minor):** The `try...catch` blocks are used for error handling, but they could be improved by providing more specific error messages to the user.",
+    "severity": "MINOR",
+    "iteration": 4,
+    "timestamp": "2026-05-21T16:24:58.341053"
+  },
+  {
+    "key": "SDLC-22",
+    "summary": "Overly Generic Methods (Minor):**  Methods like `DeserializeCSVLine` and `SerializeCSVLine` are very generic. Consider u",
+    "description": "Overly Generic Methods (Minor):**  Methods like `DeserializeCSVLine` and `SerializeCSVLine` are very generic. Consider using a dedicated data serialization library if you're dealing with complex CSV structures.",
+    "severity": "MINOR",
+    "iteration": 4,
+    "timestamp": "2026-05-21T16:24:58.341486"
+  },
+  {
+    "key": "SDLC-23",
+    "summary": "Descriptive Variable Names:** Use more descriptive names for variables like `salesRecords`, `filePath`, etc., to improve",
+    "description": "Descriptive Variable Names:** Use more descriptive names for variables like `salesRecords`, `filePath`, etc., to improve readability.",
+    "severity": "MINOR",
+    "iteration": 4,
+    "timestamp": "2026-05-21T16:24:58.342020"
+  },
+  {
+    "key": "SDLC-24",
+    "summary": "Error Messages:** Provide more specific error messages in the `try...catch` blocks, including details about the type of ",
+    "description": "Error Messages:** Provide more specific error messages in the `try...catch` blocks, including details about the type of error (e.g., \"Invalid data format\" or \"File not found\").",
+    "severity": "MAJOR",
+    "iteration": 4,
+    "timestamp": "2026-05-21T16:24:58.342464"
+  },
+  {
+    "key": "SDLC-25",
+    "summary": "Missing Implementation:** The code provides incomplete implementations for core functionalities like loading/saving data",
+    "description": "Missing Implementation:** The code provides incomplete implementations for core functionalities like loading/saving data, creating new records, and displaying them in a list view. This leaves the application with no functional capability. (**Major**)",
+    "severity": "MAJOR",
+    "iteration": 5,
+    "timestamp": "2026-05-21T16:42:44.797211"
+  },
+  {
+    "key": "SDLC-26",
+    "summary": "Error Handling:** The code uses `try/catch` blocks but doesn't implement detailed error handling or logging. This can le",
+    "description": "Error Handling:** The code uses `try/catch` blocks but doesn't implement detailed error handling or logging. This can lead to unexpected behavior and difficulty in debugging issues. (**Minor**)",
+    "severity": "MINOR",
+    "iteration": 5,
+    "timestamp": "2026-05-21T16:42:44.797700"
+  },
+  {
+    "key": "SDLC-27",
+    "summary": "Detailed Implementation:** Implement the missing functionalities like loading data from CSV, saving data to CSV, creatin",
+    "description": "Detailed Implementation:** Implement the missing functionalities like loading data from CSV, saving data to CSV, creating new records, and displaying them in a user-friendly manner.",
+    "severity": "TRIVIAL",
+    "iteration": 5,
+    "timestamp": "2026-05-21T16:42:44.798134"
+  },
+  {
+    "key": "SDLC-28",
+    "summary": "Comments:** Add clear comments explaining each section's purpose, logic, and assumptions. This will significantly improv",
+    "description": "Comments:** Add clear comments explaining each section's purpose, logic, and assumptions. This will significantly improve code readability and maintainability.",
+    "severity": "MINOR",
+    "iteration": 5,
+    "timestamp": "2026-05-21T16:42:44.798575"
+  },
+  {
+    "key": "SDLC-29",
+    "summary": "Error Handling & Logging:** Implement robust error handling mechanisms with detailed logging to track down issues and pr",
+    "description": "Error Handling & Logging:** Implement robust error handling mechanisms with detailed logging to track down issues and prevent crashes. Consider using exception tracking libraries for this purpose.",
+    "severity": "MAJOR",
+    "iteration": 5,
+    "timestamp": "2026-05-21T16:42:44.798991"
+  }
+]
