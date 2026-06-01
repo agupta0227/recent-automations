@@ -14,6 +14,7 @@ To build an agentic system that can take a high-level requirement and autonomous
 - Test code
 - Fix bugs
 - Organize the final project
+
 **Target Output**: A working VB.NET Windows Forms application (Sales Data Entry tool with CRUD functionality).
 
 ---
@@ -45,6 +46,7 @@ To build an agentic system that can take a high-level requirement and autonomous
 - Successfully generated a functional VB.NET Windows Forms application with CRUD, validation, and CSV support.
 - System typically runs **8–15 review-test-fix cycles** per execution.
 - Execution time: Several hours on a standard Dell i5 laptop.
+
 **Note**: While the generated code is functional, it still requires manual review and improvements for production use.
 
 ---
@@ -55,6 +57,7 @@ To build an agentic system that can take a high-level requirement and autonomous
 - High latency and resource consumption on consumer hardware
 - Safety risks with code execution (agents can potentially modify/delete files)
 - Need for significant human supervision
+
 **Dealing with hallucinations was fun!!** 😂
 
 ---
