@@ -77,3 +77,10 @@ To build an agentic system that can take a high-level requirement and autonomous
 - This project taught me the real complexity and challenges of building reliable agentic systems — especially when running everything locally.
 - It highlighted the importance of orchestration, resilience, human oversight, and the limitations of small local models.
 - Built as a learning project to understand agentic AI deeply.
+
+---
+
+## Screenshots
+![Main Interface](screenshots/flowchart.png)
+![Main Interface](screenshots/dashboard.png)
+
