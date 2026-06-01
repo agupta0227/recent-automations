@@ -80,7 +80,9 @@ To build an agentic system that can take a high-level requirement and autonomous
 
 ---
 
-## Screenshots
+## 📸 Screenshots
+
 ![Main Interface](screenshots/flowchart.png)
+
 ![Main Interface](screenshots/dashboard.png)
 
