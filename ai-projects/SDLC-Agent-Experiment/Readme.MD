@@ -28,30 +28,6 @@ To build an agentic system that can take a high-level requirement and autonomous
 
 ---
 
-## 📁 Project Structure
-
-Agentic-SDLC-Agent/
-├── config.py
-├── main_agent_fixed.py
-├── ui_dashboard_v2.py
-├── requirements.txt
-├── tools/
-│   ├── requirement_analyzer.py
-│   ├── code_generator.py
-│   ├── code_reviewer.py
-│   ├── tester.py
-│   ├── bug_fixer.py
-│   ├── project_organizer.py
-│   ├── explainability_agent.py
-│   ├── human_intervention.py
-│   ├── ticket_generator.py
-│   ├── resilience.py
-│   ├── realtime_logger.py
-│   └── ...
-└── output/
-
----
-
 ## ✨ Key Features
 
 - **Multi-Agent Collaboration** with specialized roles
